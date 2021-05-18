@@ -65,6 +65,8 @@ Simply replace the values with your own and add an `npm script` in your `package
         "start": "sirv public --no-clear"
     }
 
+Don't forget to change your refrences in `./public/index.html` to relative paths.
+
 ## IMPORTANT
 
 The branch you create on your repository to hold your built project will ONLY contain what is in your `./public` directory and as such you should never checkout or make changes in it since it will be overwritten on your next run of the deploy script.
