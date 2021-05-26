@@ -1,7 +1,5 @@
 <script>
 	import NavBar from './components/NavBar.svelte';
-	import Home from './components/Home.svelte';
-	import About from './components/About.svelte';
 </script>
 
 <main>
@@ -13,13 +11,6 @@
 	</div>
 	
 	<NavBar/>
-	<div class="maincontent">
-		{#if NavBar.menu === 1}
-		<Home />
-		{:else if NavBar.menu === 2}
-		<About />
-		{/if}
-	</div>
 	
 </main>
 
@@ -28,10 +19,25 @@
 
 	main {
 		animation: fadeIn 2s;
-		background-color: rgb(255, 130, 80);
+		background-image: linear-gradient(to bottom right, rgb(255, 0, 191), rgb(0, 217, 255));
 		padding: 1em;
-		max-width: 240px;
+		height: 100%;
+		width: auto;
 		margin: 0 auto;
+	}
+
+	:global(h1) {
+		color: white;
+		margin-left: 2em;
+	}
+
+	:global(h2) {
+		color: white;
+		margin-left: 1em;
+	}
+
+	:global(p) {
+		color: white;
 	}
 
 	@keyframes fadeIn {
@@ -79,11 +85,14 @@
 	}
 
 	.namebanner {
+		animation: fadeIn 2s;
+		animation-delay: 4s;
 		height: fit-content;
 		width: 740px;
 		padding: 20px;
 		background-color: #333;
 		animation: slide-in-from-left 0.75s forwards;
+		border-radius: 1em;
 	}
 
 	@keyframes slide-in-from-left {
