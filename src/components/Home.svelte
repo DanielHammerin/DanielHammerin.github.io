@@ -15,7 +15,7 @@
         margin-top: 1em;
         border-radius: 1em;
         animation: slide-up-fade-in 1s;
-        animation-delay: 2s;
+        animation-delay: 5s;
         animation-fill-mode: forwards;
     }
 
