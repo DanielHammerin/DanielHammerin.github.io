@@ -2164,7 +2164,7 @@ var app = (function () {
     			h2.textContent = "Welcome to my github pages.";
     			add_location(h1, file$3, 5, 4, 37);
     			add_location(h2, file$3, 6, 4, 56);
-    			attr_dev(main, "class", "svelte-19k4hio");
+    			attr_dev(main, "class", "svelte-ovbuqn");
     			add_location(main, file$3, 4, 0, 25);
     		},
     		l: function claim(nodes) {
